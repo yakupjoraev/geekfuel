@@ -1,0 +1,132 @@
+.section {
+
+  // .section__reveal
+
+  &__reveal {
+    padding: 100px 0;
+
+    @media (max-width: $breakpoint992) {
+      padding: 70px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 50px 0;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding: 30px 0;
+    }
+
+  }
+}
+
+.reveal {
+
+  // .reveal__inner
+
+  &__inner {
+    display: flex;
+    column-gap: 100px;
+
+    @media (max-width: $breakpoint992) {
+      column-gap: 50px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-wrap: wrap-reverse;
+      row-gap: 30px;
+    }
+  }
+
+  // .reveal__info
+
+  &__info {
+    color: #FFFFFF;
+    flex: 0 0 416px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 416px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 90%;
+    }
+    @media (max-width: $breakpoint480) {
+      text-align: center;
+    }
+  }
+
+  // .reveal__title
+
+  &__title {
+    color: $textColor;
+    font-size: 50px;
+    line-height: 91%;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .reveal__text
+
+  &__text {
+    color: $textColor;
+
+    p {
+      margin-bottom: 20px;
+
+      @media (max-width: $breakpoint768) {
+        margin-bottom: 10px;
+      }
+    }
+
+    opacity: 0.6;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .reveal__img
+
+  &__img {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.reveal {
+
+  // .reveal__link
+
+  &__link {
+    font-size: 18px;
+    line-height: 91%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    background-color: $btnColor;
+    @media (max-width: $breakpoint480) {
+      font-size: 16px;
+    }
+  }
+}

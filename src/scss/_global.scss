@@ -1,0 +1,124 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Body Locked
+body {
+  font-family: 'Graphik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  color: $textColor;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-family: 'DINPro-Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 91%;
+  color: $textColor;
+
+  @media (max-width: $breakpoint992) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    font-size: 24px;
+  }
+}
+.btn{
+  display: inline-block;
+  border: 1px solid $btnColor;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .btn:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #ac0e0e;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .btn:hover {
+  color: #ffffff;
+  border: 1px solid #ac0e0e;
+ }
+ 
+ .btn:hover:before {
+  top: -35%;
+  background-color: #ac0e0e;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }
+ 
+ .btn:hover:after {
+  top: -45%;
+  background-color:#ac0e0e;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }

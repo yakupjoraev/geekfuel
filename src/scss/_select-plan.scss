@@ -1,0 +1,257 @@
+.section {
+
+
+  // .section__select-plan
+
+  &__select-plan {
+    background-color: #F8F8F8;
+    padding: 100px 0;
+
+    @media (max-width: 1045px) {
+      padding: 70px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 50px 0;
+    }
+    @media (max-width: $breakpoint480) {
+      padding: 30px 0;
+    }
+  }
+}
+
+.select-plan {
+
+  // .select-plan__inner
+
+  &__inner {
+    text-align: center;
+  }
+
+  // .select-plan__title
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @media (max-width: 1045px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .select-plan__text
+
+  &__text {
+    margin-bottom: 85px;
+
+    @media (max-width: 1045px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .select-plan__items
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+    @media (max-width: 1045px) {
+      column-gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .select-plan__text--footer
+
+  &__text--footer {
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+    }
+  }
+}
+
+
+.cards {
+
+  // .cards__body
+
+  &__body {
+    color: $textColor;
+    background-color: #fff;
+    padding: 40px 40px 70px 40px;
+    text-align: left;
+    margin-bottom: 90px;
+
+    @media (max-width: 1045px) {
+      padding: 20px 20px 40px 20px;
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: 900px) {
+      flex: 0 1 45%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 50px;
+      padding: 10px 10px 40px 10px;
+    }
+    @media (max-width: $breakpoint480) {
+      flex:  0 1 90%;
+    }
+  }
+
+  // .cards__list
+
+  &__list {
+    position: relative;
+
+  }
+
+  // .cards__item
+
+  &__item {
+    margin-bottom: 10px;
+    @media (max-width: $breakpoint480) {
+     margin-bottom: 5px;
+    }
+  }
+
+  // .cards__item-title
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 91%;
+    color: $textColor;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint480) {
+     font-size: 16px;
+     margin-bottom: 5px;
+    }
+  }
+
+  // .cards__item-price
+
+  &__item-price {
+    font-weight: 500;
+    font-size: 34.4118px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      opacity: 0.4;
+
+      @media (max-width: $breakpoint768) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // .cards__item-img
+
+  &__item-img {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .cards__item-subtitle
+
+  &__item-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .cards__item-checked
+
+  &__item-checked {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  // .cards__item-no
+
+  &__item-no {
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.4;
+  }
+
+  // .cards__item-link
+
+  &__item-link {
+    font-family: 'DINPro-Condensed', sans-serif;
+    text-transform: uppercase;
+    background-color: $btnColor;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    max-width: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 1045px) {
+      bottom: -80px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+      max-width: 150px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      line-height: 40px;
+      bottom: -70px;
+    }
+
+  }
+}

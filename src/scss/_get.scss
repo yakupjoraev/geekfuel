@@ -1,0 +1,242 @@
+.section {
+
+  // .section__get
+
+  &__get {
+    padding: 100px 0;
+    @media (max-width: $breakpoint992) {
+      padding: 70px 0;
+    }
+  
+    @media (max-width: $breakpoint768) {
+      padding: 50px 0;
+    }
+  
+    @media (max-width: $breakpoint480) {
+      padding: 30px 0;
+    }
+  }
+}
+
+.get {
+
+  // .get__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .get__info
+
+  &__info {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    column-gap: 50px;
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+    @media (max-width: $breakpoint480) {
+     row-gap: 20px;
+     margin-bottom: 20px;
+    }
+  }
+
+  // .get__title
+
+  &__title {
+    text-transform: uppercase;
+    max-width: 450px;
+
+    span {
+      color: $btnColor;
+    }
+    @media (max-width: $breakpoint992) {
+      font-size: 36px;
+      max-width: 280px;
+    }
+    @media (max-width: $breakpoint768) {
+     max-width: 390px;
+    }
+    @media (max-width: $breakpoint480) {
+      max-width: 100%;
+      font-size: 28px;
+    }
+  }
+
+  // .get__info-items
+
+  &__info-items {
+    flex: 0 1 595px;
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 100%;
+    }
+  }
+
+  // .get__list
+
+  &__list {}
+
+  // .get__item
+
+  &__item {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    @media (max-width: $breakpoint992) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .get__box
+
+  &__box {
+    display: flex;
+    background-color: #FFF6F6;
+    padding: 85px 75px;
+    justify-content: space-between;
+    column-gap: 50px;
+    @media (max-width: 1195px) {
+      column-gap: 30px;
+      padding: 50px 30px;
+    }
+    @media (max-width: $breakpoint992) {
+     flex-direction: column;
+    row-gap: 30px;
+    }
+    @media (max-width: $breakpoint768) {
+     padding: 20px 10px;
+    }
+    @media (max-width: $breakpoint480) {
+      row-gap: 20px;
+    }
+  }
+}
+
+.box {
+
+  // .box__info
+
+  &__info {
+    max-width: 450px;
+    width: 100%;
+    @media (max-width: 1195px) {
+      max-width: 350px;
+    }
+    @media (max-width: $breakpoint992) {
+      max-width: 100%;
+      text-align: center;
+  
+    }
+  }
+
+  // .box__title
+
+  &__title {
+    margin-bottom: 50px;
+    @media (max-width: 1195px) {
+      margin-bottom: 30px;
+      font-size: 38px;
+    }
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+  }
+
+  // .box__info-items
+
+  &__info-items {}
+
+  // .box__list
+
+  &__list {}
+
+  // .box__item
+
+  &__item {
+    opacity: 0.6;
+    margin-bottom: 20px;
+    padding-left: 48px;
+     background-repeat: no-repeat;
+     @media (max-width: 1195px) {
+       font-size: 16px;
+     }
+     @media (max-width: $breakpoint992) {
+     text-align: left;
+    }
+    @media (max-width: $breakpoint768) {
+     margin-bottom: 15px;
+     padding-left: 30px;
+    }
+    @media (max-width: $breakpoint480) {
+     margin-bottom: 10px;
+    }
+  }
+  &__item--1{
+    background-image: url("../img/box-item1.png");
+  }
+  &__item--2{
+    background-image: url("../img/box-item2.png");
+  }
+  &__item--3{
+    background-image: url("../img/box-item3.png");
+  }
+  &__item--4{
+    background-image: url("../img/box-item4.png");
+  }
+  // .box__images
+
+  &__images {
+   
+  }
+
+  // .box__images-body
+
+  &__images-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: end;
+    height: fit-content;
+    @media (max-width: $breakpoint992) {
+     justify-content: center;
+     
+    }
+   
+  }
+
+  // .box__img
+
+  &__img {
+    align-self: start;
+    &:nth-child(5){
+      margin-top: -47px;
+      @media (max-width: $breakpoint992) {
+        margin-top: 0;
+      }
+      @media (max-width:772px) {
+        margin-top: -47px;
+      }
+      @media (max-width: 563px) {
+        margin-top: 0;
+      }
+    }
+  }
+}

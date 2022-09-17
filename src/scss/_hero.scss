@@ -1,0 +1,154 @@
+.section {
+
+  // .section__hero
+
+  &__hero {}
+}
+
+.hero {
+
+  // .hero__wrapper
+
+  &__wrapper {
+    background-color: $btnColor;
+    background-image: url("../img/snowflakes.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  // .hero__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .hero__titles
+
+  &__titles {
+    padding: 100px 0 100px 100px;
+    color: #FFFFFF;
+
+    @media (max-width: 1120px) {
+      padding: 80px 0 80px 80px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      padding: 60px 0 60px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      text-align: center;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding: 20px 0 20px 0;
+    }
+  }
+
+  // .hero__title
+
+  &__title {
+    font-family: 'DINPro-Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 110%;
+    margin-bottom: 30px;
+
+    @media (max-width: 1780px) {
+      font-size: 80px;
+    }
+
+    @media (max-width: 1120px) {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 46px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      font-size: 36px;
+    }
+  }
+
+  // .hero__text
+
+  &__text {
+    margin-bottom: 50px;
+    max-width: 378px;
+
+    @media (max-width: 1120px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 16px;
+      max-width: 250px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 740px;
+    }
+  }
+
+  // .hero__link
+
+  &__link {
+    text-transform: uppercase;
+    font-family: 'DINPro-Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 91%;
+    color: $textColor !important;
+    background-color: #fff;
+    padding: 20px 45px;
+    transition: color 0.3s ease 0s,  background-color 0.3s ease 0s,;
+
+    &:hover {
+      background-color: #ac0e0e;
+      color: #fff !important;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+  }
+
+  // .hero__images
+
+  &__images {
+    margin-top: 4px;
+
+    img {
+      vertical-align: bottom;
+
+      @media (max-width: 1780px) {
+        max-width: 167%;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      img {
+        max-width: 100%;
+      }
+
+      text-align: center;
+
+    }
+  }
+}
